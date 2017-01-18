@@ -13,6 +13,9 @@ main:
 	call _wczytaj
 	mov r14, r13
 	
+	test r14, 0xFFFFFFFFFFFFFFFF;
+	jz _exit
+	
 	call _wczytaj
 	mov r15, r13
 	sub r14, 1
